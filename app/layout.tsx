@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import SmoothScroll from "@/components/smooth-scroll";
 
 const ppNeue = localFont({
   src: "./fonts/PPNeueMontreal.otf",
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${ppNeue.variable} font-sans antialiased`}>
         {children}
+        <SmoothScroll />
       </body>
     </html>
   );
