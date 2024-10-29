@@ -11,7 +11,7 @@ export default function Home() {
         </p>
       </div>
       <ScrollContainer />
-      <div className=" p-[5vw] w-full flex flex-col items-center gap-[3vw] pt-[8vw]">
+      <div className=" px-[5vw] w-full flex flex-col items-center gap-[3vw] py-[12vw]">
         <p className="text-[10vw] leading-[9vw]  tracking-[-0.04em]">
           WORK<sup className="text-[4vw] -top-[1.25em]">(24)</sup>
         </p>
