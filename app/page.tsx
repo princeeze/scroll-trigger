@@ -1,8 +1,10 @@
+import Loading from "@/components/loading";
 import { ScrollContainer } from "@/components/scroll-container";
 
 export default function Home() {
   return (
     <div className="text-[#2E2E2E]">
+      <Loading />
       <div className="h-[100dvh] p-[3vw] w-full flex items-end">
         <p className="text-[10vw] flex flex-col leading-[9vw]  tracking-[-0.04em]">
           <span>WE ARE</span>
