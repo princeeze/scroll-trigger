@@ -27,7 +27,7 @@ export function ScrollContainer() {
           className="w-full p-[1dvh] flex justify-center items-center"
           style={{ height: heightLevel }}
         >
-          <VideoPlayer src="https://zgedlwpfczwztvxbgywz.supabase.co/storage/v1/object/public/video/-ed85-43aa-86d5-96d4b88caa8c.mpd" />
+          <VideoPlayer src="https://zgedlwpfczwztvxbgywz.supabase.co/storage/v1/object/public/video/-ed85-43aa-86d5-96d4b88caa8c_output1_5.mp4" />
         </motion.div>
       </motion.div>
     </div>
