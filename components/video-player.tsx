@@ -24,7 +24,7 @@ export default function VideoPlayer({ src }: { src: string }) {
             responsive: true,
             poster: "/poster.png",
             bigPlayButton: false,
-            loadingSpinner: false,
+            loadingSpinner: true,
             loop: true,
             fill: true,
             sources: [
