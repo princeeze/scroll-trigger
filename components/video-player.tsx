@@ -1,16 +1,21 @@
-// components/VideoPlayer.tsx
-
-export default function VideoPlayer({ src }: { src: string }) {
+export default function VideoPlayer({
+  src,
+  poster,
+}: {
+  src: string;
+  poster: string;
+}) {
   return (
-    <div className="h-full w-full">
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="h-full w-full object-contain"
-        src={src}
-      />
-    </div>
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="h-full w-full object-contain"
+      src={src}
+      poster={poster}
+    >
+      <p>Your browser does not support the video tag.</p>
+    </video>
   );
 }

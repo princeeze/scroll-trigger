@@ -1,9 +1,8 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import VideoPlayer from "./video-player";
 
-export function ScrollContainer() {
+export function ScrollContainer({ children }: { children: React.ReactNode }) {
   const videoDiv = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -27,7 +26,7 @@ export function ScrollContainer() {
           className="w-full p-[1dvh] flex justify-center items-center"
           style={{ height: heightLevel }}
         >
-          <VideoPlayer src="https://zgedlwpfczwztvxbgywz.supabase.co/storage/v1/object/public/video/-ed85-43aa-86d5-96d4b88caa8c_output1_3.mp4" />
+          {children}
         </motion.div>
       </motion.div>
     </div>

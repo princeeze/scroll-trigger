@@ -1,7 +1,12 @@
 import Loading from "@/components/loading";
 import { ScrollContainer } from "@/components/scroll-container";
+import VideoPlayer from "@/components/video-player";
 
 export default function Home() {
+  const src =
+    "https://zgedlwpfczwztvxbgywz.supabase.co/storage/v1/object/public/video/-ed85-43aa-86d5-96d4b88caa8c_output1_3.mp4";
+  const poster = "/poster.png";
+
   return (
     <div className="text-[#2E2E2E]">
       <Loading />
@@ -12,7 +17,9 @@ export default function Home() {
           <span>DESIGN STUDIO</span>
         </p>
       </div>
-      <ScrollContainer />
+      <ScrollContainer>
+        <VideoPlayer src={src} poster={poster} />
+      </ScrollContainer>
       <div className=" px-[5vw] w-full flex flex-col items-center gap-[3vw] py-[12vw]">
         <p className="text-[10vw] leading-[9vw]  tracking-[-0.04em]">
           WORK<sup className="text-[4vw] -top-[1.25em]">(24)</sup>
