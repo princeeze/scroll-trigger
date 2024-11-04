@@ -8,7 +8,7 @@ export default function Loading() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false);
-    }, 5000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -20,8 +20,8 @@ export default function Loading() {
           className="fixed top-0 flex items-center justify-center left-0 h-[100dvh] z-10 w-full"
           initial={{ backgroundColor: "#FFFFFF" }}
           animate={{
-            backgroundColor: "#2E2E2E",
-            transition: { duration: 5 },
+            backgroundColor: "#000000",
+            transition: { duration: 0.5 },
           }}
           exit={{
             y: "100dvh",
@@ -31,8 +31,7 @@ export default function Loading() {
             },
           }}
         >
-          {" "}
-          <span className="text-[15vw] animate-pulse mix-blend-difference">
+          <span className="text-[15vw] animate-pulse text-[#FFFFFF] mix-blend-difference">
             *
           </span>
         </motion.div>
