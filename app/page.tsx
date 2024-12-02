@@ -4,7 +4,7 @@ import VideoPlayer from "@/components/video-player";
 
 export default function Home() {
   const src =
-    "https://zgedlwpfczwztvxbgywz.supabase.co/storage/v1/object/public/video/-ed85-43aa-86d5-96d4b88caa8c_output1_3.mp4";
+    "https://sftybvsuremldvtipxoq.supabase.co/storage/v1/object/public/video/background.mp4";
   const poster = "/poster.png";
 
   return (
